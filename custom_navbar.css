@@ -18,7 +18,8 @@
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav .dropdown div.dropdown-menu > a:hover,
-.navbar-default .navbar-nav .dropdown div.dropdown-menu > a:focus
+.navbar-default .navbar-nav .dropdown div.dropdown-menu > a:focus,
+.navbar-default .navbar-nav .dropdown div.dropdown-menu > a.active
 {
 	color: #00786F;
 }
@@ -49,14 +50,15 @@
 	padding: 8px 14px;
 }
 
-
+.navbar-default .navbar-nav .dropdown div.dropdown-menu > a.active,
 .navbar-default .navbar-nav .dropdown div.dropdown-menu > a:hover,
 .navbar-default .navbar-nav .dropdown div.dropdown-menu > a:focus
 {
 	background-color: rgb(233, 236, 239);
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+{
     display: block;
 }
 
