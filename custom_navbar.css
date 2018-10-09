@@ -13,6 +13,7 @@
 	color: #555;
 }
 
+
 .navbar-default .form-inline .input-group-text > i,
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li > a:hover,
@@ -62,6 +63,19 @@
     display: block;
 }
 
+.navbar-toggler
+{
+	color: #00786F;
+	border-color: rgba(0, 0, 0, .1);
+}
+
+button:focus
+{
+	outline: 0;
+	border: 1px solid #00786F;
+	box-shadow: 0px 0px 3px 0px #00786F;	
+}
+
 /*Nav Bar Layout Responsive Setting*/
 @media (max-width: 992px)
 {
@@ -91,3 +105,4 @@
 		padding-bottom: 15px;
 	}
 }
+
