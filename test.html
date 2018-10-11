@@ -18,12 +18,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./custom_navbar.css">
+    <link rel="stylesheet" href="./custom_main_content.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-expand-lg  py-0">
-        <div class="container mx-6">
-            <!-- LOGO SETTING -->
+    <div class="content">
+        <nav class="navbar navbar-default navbar-expand-lg bd-navbar py-0">
+        <!-- LOGO SETTING -->
             <a class="navbar-brand mx-2 " href="#">
                 <img src="./matchpro-logo-sm.png" width="36" height="36" class="d-inline-block align-top mr-1" alt="">
             </a>
@@ -40,15 +41,12 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                         </div>
-                        <input type="search" class="form-control " placeholder="Search..." aria-label="Search" aria-describedly="basic-addon1">
+                        <input type="search" class="form-control " placeholder="Search based on a content(put job description or candidate's experience in detail)" aria-label="Search" aria-describedly="basic-addon1">
                     </div>
                 </form>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active dropdown pl-2">
+                    <!-- <li class="nav-item active dropdown pl-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            <!-- <span><i class="fas fa-tachometer-alt"></i>
-                            Dashboard
-                            </span> -->
                             Dashboard
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -60,9 +58,6 @@
                     </li>
                     <li class="nav-item dropdown pl-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            <!-- <span><i class="fas fa-wrench"></i>
-                            Admin Dashboard
-                            </span> -->
                             Admin Dashboard
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -71,13 +66,15 @@
                             <a class="dropdown-item" href="#">Add Positions</a>
                             <a class="dropdown-item" href="#">Notifications</a>
                         </div>
+                    </li> -->
+                    <li class="nav-item pl-2">
+                        <img src="./matching_proto_v1.png" width="400" height="60" class="d-inline-block" alt="">
                     </li>
                     <li class="nav-item dropdown pl-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            <!-- <span><i class="fas fa-user-circle"></i>
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <img class="user-picture mr-1" src="./user-image-default.png" width="40" height="40" alt="User profile picture">
                             Rui Yang
-                            </span> -->
-                            Rui Yang
+                            <i class="fas fa-chevron-down"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Profile</a>
@@ -89,8 +86,32 @@
 
                 </ul>
             </div>
+        </nav>
+
+        <div class="container-fluid main-content">
+            <div class="container-fluid dashboard-content">
+                <div class="row">
+                    <div class="col-lg-7">
+                        
+                    </div>
+                    
+                    <div class="col-lg-3 col-12 dashboard-items-container">
+                        
+                    </div>
+                    <div class="col-lg-3 dashboard-items-container">
+                        
+                    </div>
+                    <div class="col-lg-6 col-lg-12">
+                        
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-    </nav>
+
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
