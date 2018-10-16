@@ -92,11 +92,27 @@
             <div class="container-fluid dashboard-content">
                 <div class="row">
                     <div class="col task-container">
-                        <div class="task-head">
-                            <h3>Recommended Tasks</h3>
+                        <div class="container-head">
+                            <h3>Tasks To Do</h3>
                         </div>
-                        <div class="task-body">
+                        <div class="container-body">
                             <div class="task-item" tabindex="0">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <p>IT Manager(Mandarin)</p>
+                                        <p>Raymond</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p>[Alibaba]</p>
+                                        <p>[MSSQL Server DBA]</p>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" style=
+                                    "width:83%;" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">83% match</div>
+                                </div>
+                            </div>
+                            <div class="task-item">
                                 <div class="row">
                                     <div class="col-7">
                                         <p>IT Manager(Mandarin)</p>
@@ -115,19 +131,48 @@
                             <div class="task-item"></div>
                             <div class="task-item"></div>
                             <div class="task-item"></div>
-                            <div class="task-item"></div>
                         </div>
                     </div>
                     <div class="col task-container">
-                        <div class="task-head">
-                            <h3>Assigned Tasks</h3>
+                        <div class="container-head">
+                            <h3>Tasks Assigned</h3>
                         </div>
-                        <div class="task-body">
-                            
+                        <div class="container-body">
+                            <div class="task-item"></div>
+                            <div class="task-item"></div>
+                            <div class="task-item"></div>
+                            <div class="task-item"></div>
+                            <div class="task-item"></div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        
+                    <div class="col-5 right-task-container">
+                        <div>
+                            <h3>Not found what you are looking for?</h3>
+                        </div>
+                        <div class="match-container">
+                            <div class="container-head">
+                                <h4>See a candidate's top-5 matches</h4>
+                            </div>
+                            <div class="container-body">
+                                <p>Search his/her name or upload resume</p>
+                                <form action="">
+                                    <input class="col-8" type="text" name="upload" placeholder="Text">
+                                    <input id="file-submit" type="submit" value="Choose file">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="match-container">
+                            <div class="container-head">
+                                <h4>See a position's top-5 matches</h4>
+                            </div>
+                            <div class="container-body">
+                                <p>Search the position name or upload position description file</p>
+                                <form action="">
+                                    <input class="col-8" type="text" name="upload" placeholder="Text">
+                                    <input id="file-submit" type="submit" value="Choose file">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
