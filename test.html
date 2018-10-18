@@ -95,7 +95,7 @@
                         <h3>Tasks To Do</h3>
                     </div>
                     <div class="container-body">
-                        <div class="task-item" tabindex="0">
+                        <div class="task-item" draggable="true" tabindex="0">
                             <div class="row">
                                 <div class="col-7">
                                     <p>IT Manager(Mandarin)</p>
@@ -132,16 +132,12 @@
                         <div class="task-item"></div>
                     </div>
                 </div>
-                <div class="col task-container">
+                <div class="col task-container" id="assigned-task">
                     <div class="container-head">
                         <h3>Tasks Assigned</h3>
                     </div>
                     <div class="container-body">
-                        <div class="task-item"></div>
-                        <div class="task-item"></div>
-                        <div class="task-item"></div>
-                        <div class="task-item"></div>
-                        <div class="task-item"></div>
+                        
                     </div>
                 </div>
                 <div class="col-5 right-task-container">
@@ -185,6 +181,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("div.task-item").click(function(){
+                $(this).dbclick(function(){
+                    $("#assigned-task").children(".container-body").append(this).show();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
