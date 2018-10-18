@@ -5,6 +5,7 @@
 	background-color: #FFFFFF;
 	border-bottom: 0.5rem solid #a5d18c;
 	width: 100%;
+	min-width: 1280px;
 	min-height: 80px;
 }
 

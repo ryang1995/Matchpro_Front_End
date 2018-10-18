@@ -1,9 +1,13 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
 html, body
 {
 	height: 100%;
 	min-height: 100%;
-	padding: 0;
-	margin: 0;
 	background: #005d62;
 	font-family: 'Roboto', sans-serif
 	/*min-height:s 640px;*/
@@ -32,20 +36,16 @@ nav{
 	margin: -80px 0 0;
 }
 
-.main-content
+.dashboard-content
 {
 	height: 100%;
+	width: 90%;
+	min-width: 1280px;
+	/*height: 620px;*/
+	min-height: 620px;
 	background: #005d62;
 	padding-top: 5%;
 	padding-bottom: 5%;
-}
-
-.dashboard-content
-{
-	width: 1280px;
-	min-width: 1280px;
-	height: 620px;
-	min-height: 620px;
 }
 
 dashboard-content > .row,
@@ -128,11 +128,6 @@ dashboard-content > .row,
 {
 	height: 13px;
 	margin: 10px 0;
-}
-
-.right-task-container
-{
-	padding-left: 3rem;
 }
 
 .right-task-container > div:first-child
