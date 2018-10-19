@@ -23,7 +23,6 @@ p
 	color: rgb(17,113,119);
 }
 
-
 /*Layout setting*/
 .content
 {
@@ -41,8 +40,6 @@ nav{
 .dashboard-content
 {
 	height: 100%;
-	width: 90%;
-	min-width: 1222px;
 	min-height: 620px;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -53,8 +50,6 @@ nav{
 }
 
 dashboard-content > .row,
-.row .task-container,
-.row .right-task-container
 {
 	height: 100%;
 }
@@ -75,11 +70,6 @@ dashboard-content > .row,
 
 .task-container
 {
-	/*-ms-flex-preferred-size: 0;
-	flex-basis: 0;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-*/	width: 373.55px;
 	padding-right: 15px;
 	padding-left: 15px;
 	position: relative;
@@ -110,10 +100,10 @@ dashboard-content > .row,
 	padding: 5px;
 }
 
-/*.task-container .container-body div.task-item:focus
+.task-container .container-body div.task-item:focus
 {
 	border-color: rgb(165,209,140, 0.7);
-}*/
+}
 
 .task-container .container-body .task-item > .row
 {
@@ -139,7 +129,7 @@ dashboard-content > .row,
 	color: rgb(36,124,129);
 }
 
-/*.task-container .container-body .task-item span:hover,*/
+.task-container .container-body .task-item span:hover,
 .task-container .container-body .task-item a:hover
 {
 	color: #003300;
@@ -218,3 +208,79 @@ dashboard-content > .row,
 	padding: 0;
 }
 
+/*Smallest layout*/
+@media screen and (max-width: 768px)
+{
+	.dashboard-content
+	{
+		width: 80%;
+		min-width: 476px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.task-container
+	{
+		width: 100%;
+		min-width: 476px;
+		margin-bottom: 20px;
+	}
+
+	.right-task-container
+	{
+		display: block;
+		width: 100%;
+		min-width: 476px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width: 1239px)
+{
+	.dashboard-content
+	{
+		width: 80%;
+		min-width: 748px;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	
+	.task-container
+	{
+		width: 50%;
+		min-width: 373.55px;
+		/*padding-right: 0;*/
+	}
+
+	.right-task-container
+	{
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.form-inline
+	.input-group
+	{
+    	width: 300px;
+	}
+}
+
+/*Biggest layout*/
+@media screen and (min-width: 1240px)
+{
+	.dashboard-content
+	{
+		min-width: 1222px;
+		width: 90%;
+	}
+
+	.task-container
+	{
+		width: 373.55px;
+	}
+
+	.navbar-default
+	{
+		width: 100%;
+		min-width: 1222px;
+	}
+}
