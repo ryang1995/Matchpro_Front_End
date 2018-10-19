@@ -114,7 +114,8 @@ dashboard-content > .row,
 	padding: 0 5px;
 }
 
-.task-container .container-body .task-item p
+.task-container .container-body .task-item p,
+.task-container .container-body .task-item a
 {
 	height: 1.5em;
 	margin: 0;
@@ -122,6 +123,14 @@ dashboard-content > .row,
 	width: 100%;
 	overflow: hidden;
 	font-size: 0.8rem;
+	color: rgb(36,124,129);
+}
+
+/*.task-container .container-body .task-item span:hover,*/
+.task-container .container-body .task-item a:hover
+{
+	color: #003300;
+	text-decoration: none;
 }
 
 
