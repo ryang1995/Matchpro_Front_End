@@ -42,22 +42,22 @@ nav{
 {
 	height: 100%;
 	width: 90%;
-	min-width: 1280px;
-	/*height: 620px;*/
+	min-width: 1222px;
 	min-height: 620px;
-	/*background: #005d62;*/
 	padding-top: 5%;
 	padding-bottom: 5%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 dashboard-content > .row,
 .row .task-container,
 .row .right-task-container
 {
-	/*border: 2px solid white;*/
 	height: 100%;
 }
-
 
 /*Task container setting*/
 .container-head
@@ -71,6 +71,19 @@ dashboard-content > .row,
 .container-body
 {
 	background-color: white;
+}
+
+.task-container
+{
+	/*-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+*/	width: 373.55px;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+	min-height: 1px;
 }
 
 .task-container > .container-head
@@ -138,6 +151,16 @@ dashboard-content > .row,
 {
 	height: 13px;
 	margin: 10px 0;
+}
+
+.right-task-container
+{
+	width: calc(100% - 747.1px);
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+	min-height: 1px;
+	height: 100%;
 }
 
 .right-task-container > div:first-child
